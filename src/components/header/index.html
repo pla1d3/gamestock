@@ -1,0 +1,38 @@
+<div class={{styles.logoCase}}>
+    <div class={{styles.logo}}></div>
+    <h3>Prime Games</h3>
+</div>
+<nav>
+    <ul>
+        <li>
+            <a
+                routerLink=""
+                routerLinkActive={{styles.active}}
+                [routerLinkActiveOptions]="{exact:true}"
+            >Главная</a>
+        </li>
+        <li>
+            <a
+                routerLink="/catalog"
+                routerLinkActive={{styles.active}}
+                [routerLinkActiveOptions]="{exact:true}"
+            >Каталог</a>
+        </li>
+        <li>
+            <a
+                routerLink="/about"
+                routerLinkActive={{styles.active}}
+                [routerLinkActiveOptions]="{exact:true}"
+            >О нас</a>
+        </li>
+        <li>
+            <a
+                routerLink="/contacts"
+                routerLinkActive={{styles.active}}
+                [routerLinkActiveOptions]="{exact:true}"
+            >Контакты</a>
+        </li>
+        <div class={{styles.dash}}></div>
+    </ul>
+</nav>
+<div class={{styles.info}}></div>

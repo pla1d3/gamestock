@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html'
+    templateUrl: './index.html'
 }) export class AppComponent {
-    title = 'Prime Game';
+    styles = require('./index.scss')
 }

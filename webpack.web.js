@@ -6,11 +6,11 @@ module.exports = env=> {
 
     return {
         entry: {
-            'polyfills': './src/polyfills.ts',
-            'app': './src/main.ts'
+            'polyfills': './web/polyfills.ts',
+            'app': './web/main.ts'
         },
         output:{
-            path: path.resolve(__dirname, './public'),
+            path: path.resolve(__dirname, './dist'),
             publicPath: '/',
             filename: '[name].js'
         },
@@ -75,7 +75,7 @@ module.exports = env=> {
         plugins: [
             new webpack.ContextReplacementPlugin(
                 /angular(\\|\/)core/,
-                path.resolve(__dirname, 'src'),
+                path.resolve(__dirname, 'web'),
                 {}
             )
         ],

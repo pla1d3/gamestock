@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './index';
-import { SliderComponent } from '../../components/slider';
+import { SliderModule } from '../../components/slider/module';
 
 @NgModule({
-    imports: [],
+    imports: [SliderModule],
     exports: [HomeComponent],
-    declarations: [
-        HomeComponent,
-        SliderComponent
-    ],
+    declarations: [HomeComponent],
     providers: [],
 }) export class HomeModule {}

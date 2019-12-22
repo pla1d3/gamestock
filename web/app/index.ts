@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './index.html'
+    templateUrl: './app.html'
 }) export class AppComponent {
-    styles = require('./index.scss')
+    styles = require('./app.scss')
 }

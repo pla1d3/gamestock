@@ -1,0 +1,33 @@
+<div class={{styles.case}}>
+    <div class={{styles.content}}>
+        <div class={{styles.arrowCase}}>
+            <div
+                [ngClass]="[styles.arrow, styles.prev]"
+                (click)="clickLeftArrow()"
+            ></div>
+        </div>
+        <div class={{styles.items}}>
+            <div
+                *ngFor="let item of items"
+                class={{styles.item}}
+                [ngStyle]="{
+                    backgroundColor: item.backgroundColor,
+                    transform: 'translateX(' + transform + ')',
+                    transition: transition
+                }"
+            ></div>
+        </div>
+        <div class={{styles.arrowCase}}>
+            <div
+                class={{styles.arrow}}
+                (click)="clickRightArrow()"
+            ></div>
+        </div>
+    </div>
+    <div class={{styles.pagination}}>
+        <div class={{styles.paginationItem}}></div>
+        <div class={{styles.paginationItem}}></div>
+        <div class={{styles.paginationItem}}></div>
+        <div class={{styles.paginationItem}}></div>
+    </div>
+</div>

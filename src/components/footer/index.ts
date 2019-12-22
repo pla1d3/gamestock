@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-  
+
 @Component({
-    selector: 'contacts',
+    selector: 'footer',
     templateUrl: './index.html'
-}) export class ContactsComponent {}
+}) export class FooterComponent {
+
+}
